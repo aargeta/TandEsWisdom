@@ -1,0 +1,23 @@
+DEPENDENCIES
+
+Python 3.9+ (or a reasonably modern 3.x version)
+
+Pip-installed libraries:
+
+requests (for making HTTP calls to the ElevenLabs API, DupDub API, etc.)
+dropbox (for uploading files to Dropbox)
+tweepy (for the Twitter v1.1 media upload and v2 tweet creation)
+openai (for GPT/Grok calls)
+python-dotenv (for loading environment variables from your .env file)
+You can install these via:
+
+bash
+Copy code
+pip install requests dropbox tweepy openai python-dotenv
+FFmpeg (executable):
+
+The script calls ffmpeg (and ffprobe) commands through subprocess.run for video/audio processing.
+Make sure ffmpeg and ffprobe are installed and available on your system’s PATH.
+A valid .env file with your API credentials:
+
+This includes your XAI_API_KEY, ELEVENLABS_API_KEY, DUPDUB_API_KEY, DROPBOX_ACCESS_TOKEN, TWITTER_API_KEY, TWITTER_API_SECRET, TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_SECRET, and TWITTER_BEARER_TOKEN.
